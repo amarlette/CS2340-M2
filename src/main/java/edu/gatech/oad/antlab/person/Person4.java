@@ -31,9 +31,11 @@ public class Person4 {
      */
     private static String calc(String input) {
       String temp = "";
+
       for (int i = 0; i < input.length(); i++) {
         temp = temp + (char) (input.charAt(i) + 1);
       }
+
       return temp;
     }
     
