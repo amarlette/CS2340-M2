@@ -35,6 +35,8 @@ public class Person2 {
 			return input.substring(3) + input.substring(2, 3) + input.substring(0, 2);
 		} else if (input.length() > 1) {
 			return input.substring(1, 2) + input.substring(0, 1);
+		} else {
+			return input;
 		}
 	}
 	/**
