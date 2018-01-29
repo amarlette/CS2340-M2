@@ -31,15 +31,10 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 		String nString;
-		for (int i = 0; i < name.length()-1; i++){
-			if (i+2 > name.length-1) {
-				nString.charAt(i) = name.charAt(i + 2);
-			} else {
-				nString.charAt(name.length()-2) = name.charAt(0);
-				nString.charAt(name.length()-1) = name.charAt(1);
-			}
-		}
-		System.out.print(nString);
+		String nName;
+		nString = name.substring(2);
+		nName = name.substring(0, 1);
+		nString = nString.concat(nName);
 		return nString;
 	}
 	
