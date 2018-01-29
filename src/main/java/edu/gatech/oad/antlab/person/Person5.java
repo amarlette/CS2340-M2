@@ -35,26 +35,20 @@ public class Person5 {
 		    return input;
 		}
 
-	    else
-		{
-		    String rotated = "";
-		    int index = 2;
-		    for (int i=0; i < input.length(); i++)
-			{
-			    index +=i;
-			    if (index < input.length())
-				{
-				    rotated += input.charAt(index);
-				}
-			    else
-				{
-				    rotated += input.charAt(input.length() - 1 - index));
-				}
-			}
-		
+	    } else {
+		String rotated = "";
+		int index = 2;
+		for (int i = 0; i < input.length(); i++) {
+
+		    if (index < input.length()) {
+			rotated += input.charAt(index);
+		    } else {
+			rotated += input.charAt(index - input.length());
+		    }
+		    index += 1;
 		}
-	  
-	  return null;
+		return rotated;
+	    }
 	}
 	
 	/**
